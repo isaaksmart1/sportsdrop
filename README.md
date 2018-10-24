@@ -2,6 +2,15 @@
 
 SportsDrop is a social community based application which allows users to organize and share sports-related events and activities.
 
+## Prerequisites
+
+* +-- @angular/cli@6.2.3
+* +-- cordova@8.0.0
+* +-- eslint@5.7.0
+* +-- ionic@3.20.0
+* +-- jshint@2.9.6
+* -- npm@5.6.0
+
 # Mobile App
 
 /folder/location/sportsdrop_client
@@ -14,6 +23,20 @@ SportsDrop is a social community based application which allows users to organiz
 * Encrypted messaging - create and manage groups using in-built chat-system
 * App customization - change notification tones, messages and color schemes to your liking
 * User control - if you wish to longer use SportsDrop, you can always delete your account from within the app
+
+## Usage
+
+Navigate to root folder directory '/' and install node_modules:
+
+`npm install --save`
+
+Then to run app inside browser use Angular-cli OR Ionic-cli:
+
+`ng serve`  
+
+OR  
+
+`ionic serve`
 
 # Web Server
 
@@ -30,6 +53,16 @@ This solution assumes you have CouchDB Database installed and configured to the 
 * SSL/TLS Configuration file for HTTPS Requests
 * JWT authentication
 
+## Usage
+
+Navigate to root folder directory '/' and install node_modules:
+
+`npm install --save`
+
+Run web server using node:
+
+`node server.js`
+
 # Website
 
 /folder/location/sportsdrop_www
@@ -42,3 +75,13 @@ This contains a starter template for the website; serves as a landing page to pr
 * Contact Us Link
 * Instagram Link
 * Terms and Conditions
+
+## Usage
+
+Navigate to root folder directory '/' and install node_modules:
+
+`npm install --save`
+
+Run web site using node:
+
+`node server.js`
