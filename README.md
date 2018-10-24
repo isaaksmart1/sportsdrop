@@ -19,7 +19,7 @@ SportsDrop is a social community based application which allows users to organiz
 
 /folder/location/sportsdrop_server
 
-This solution assumes you have CouchDB Database installed and configured to the desired ports (default: 5984) and NodeJS. 
+This solution assumes you have CouchDB Database installed and configured to the desired ports (default: 5984) and NodeJS-Express. 
 
 *Note: If you wish to run multiple instances of this script (i.e. multiple servers), you can setup a load balancing proxy to cycle requests. I recommend using HAProxy.*
 
