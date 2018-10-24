@@ -1,0 +1,130 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <div class="row " style="margin-top: 10px">
+        <tr>
+            <td align="left" bgcolor="#ffffff" style="padding: 20px;">
+                <img src="http://<ip-address>/__hero__logo.png" alt="SportsDrop Password Reset" width="initial" height="initial" style="display: block;"
+                />
+            </td>
+        </tr>
+        <div style="margin-left: 30px;">
+            <h4>Thank you for downloading SportsDrop</h4>
+            <p id="progress">
+                Please wait while we verify your registration ...
+            </p>
+            <div id="progress-spinner" class="content-container load7">
+                <div class="loader">
+                </div>
+            </div>
+            <div id="reg-complete" class="content-container">
+                <p>
+                    Congratulations you have successfully completed your registration.
+                    <br> You can now exit this window and continue using SportsDrop
+                </p>
+            </div>
+        </div>
+    </div>
+    <style>
+        body {
+            text-align: left;
+            display: table;
+            position: absolute;
+            color: #ffffff;
+            background: #128dd4;
+            font-family: Verdana, Geneva, sans-serif, "Trebuchet MS", Helvetica;
+        }
+
+        .content-container {
+            width: 100%;
+            padding: 0;
+            display: table;
+            height: auto;
+            left: 0;
+            margin: 0;
+        }
+
+        #progress,
+        #reg-complete {
+            font-size: 14px;
+        }
+
+        .loader,
+        .loader:before,
+        .loader:after {
+            border-radius: 50%;
+            width: 1.5em;
+            height: 1.5em;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation: load7 1.8s infinite ease-in-out;
+            animation: load7 1.8s infinite ease-in-out;
+        }
+
+        .loader {
+            color: #ffffff;
+            font-size: 5px;
+            margin: 5px 50px;
+            position: relative;
+            text-indent: -9999em;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+        }
+
+        .loader:before,
+        .loader:after {
+            content: '';
+            position: absolute;
+            top: 0;
+        }
+
+        .loader:before {
+            left: -3.5em;
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+        }
+
+        .loader:after {
+            left: 3.5em;
+        }
+
+        @-webkit-keyframes load7 {
+            0%,
+            80%,
+            100% {
+                box-shadow: 0 2.5em 0 -1.3em;
+            }
+            40% {
+                box-shadow: 0 2.5em 0 0;
+            }
+        }
+
+        @keyframes load7 {
+            0%,
+            80%,
+            100% {
+                box-shadow: 0 2.5em 0 -1.3em;
+            }
+            40% {
+                box-shadow: 0 2.5em 0 0;
+            }
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $regComplete = $('#reg-complete');
+            $progressSpinner = $('#progress-spinner');
+            $regComplete.hide();
+            setTimeout(function () {
+                $regComplete.fadeIn();
+                $progressSpinner.hide();
+            }, 5000);
+        });
+    </script>
+</head>
+
+</html>
