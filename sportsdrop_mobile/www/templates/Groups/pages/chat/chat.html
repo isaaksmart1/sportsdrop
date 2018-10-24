@@ -1,0 +1,39 @@
+<ion-modal-view ng-controller="ChatCtrl" ng-model="groupInfo" ng-init="scrollContentToBottom()">
+  <ion-header-bar class="bar bar-header bar-theme" ng-click="closeModal()">
+    <div class="buttons buttons-left header-item">
+      <span class="left-buttons">
+      <button class="button button-icon button-clear ion-{{platformID}}-arrow-back"></button> 
+      </span>
+    </div>
+    <h1 class="title title-left">
+      {{groupInfo.name}}
+      <span ng-repeat="members in groupInfo.members" style="font-size: 14px; font-style: italic;">
+      {{members}}, 
+    </span>
+    </h1>
+  </ion-header-bar>
+  <ion-content scroll="false">
+    <ion-scroll class="message-container" delegate-handle="chat-window">
+      <ion-list>
+        <div ng-class="message.from !== user ? 'message' : 'message right'" ng-repeat="message in messages">
+          <img src="{{message.avatar}}">
+          <div class="bubble">
+            {{message.message}}
+            <div class="corner"></div>
+            <span ng-show="message.from !== user" class="from">{{message.from}}</span>
+            <span>{{message.timestamp}}</span>
+          </div>
+        </div>
+      </ion-list>
+    </ion-scroll>
+  </ion-content>
+  <div class="bottom-message-input">
+    <ion-input class="item-input item-input-wrapper">
+      <span ng-show="typing" class="input-label typist">{{typist}} is typing...</span>
+      <input type="text" placeholder="Type your message" ng-change="sendTyping(user)" ng-model="messageBox.text" ng-focus="focus=true"
+        ng-blur="focus=false">
+      <ion-label class="icon ng-class:{true: 'ion-android-send', false: 'ion-ios-paperplane'}[androidPlatform]" ng-click="sendMessage()" ng-if="focus && messageBox.text.length">
+      </ion-label>
+    </ion-input>
+  </div>
+</ion-modal-view>

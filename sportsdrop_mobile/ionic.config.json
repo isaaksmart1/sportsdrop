@@ -1,0 +1,31 @@
+{
+  "name": "SportsDrop",
+  "app_id": "",
+  "gulpStartupTasks": [
+    "sass",
+    "templatecache",
+    "ng_annotate",
+    "useref",
+    "scripts",
+    "watch"
+  ],
+  "watch": {
+    "sass": [
+      "scss/**/*.scss"
+    ],
+    "html": [
+      "www/**/*.html"
+    ],
+    "livereload": [
+      "www/**/*.html",
+      "www/**/*.js",
+      "www/**/*.css"
+    ]
+  },
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ],
+  "integrations": {},
+  "type": "ionic1"
+}

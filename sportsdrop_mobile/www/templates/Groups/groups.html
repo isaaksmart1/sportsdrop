@@ -1,0 +1,44 @@
+<div ng-init="updateGroupsList()">
+  <div class="sportsdrop bar bar-header has-tabs-top">
+    <div class="h1 title title-center color">My Groups</div>
+    <div class="buttons buttons-right header-item">
+      <span class="right-buttons">
+        <button ng-click="openActions()"
+        class="button button-icon button-clear ng-class:{true: 'ion-android-more-horizontal', false: 'ion-ios-more'}[androidPlatform]"> 
+        </button> 
+      </span>
+    </div>
+    <div class="buttons buttons-left header-item">
+      <span class="right-buttons">
+        <button class="button button-icon button-clear ion-{{platformID}}-home" ui-sref="home"></button> 
+      </span>
+    </div>
+  </div>
+  <div class="has-tabs-top platform item-input-inset search-bar" style="z-index: 1;">
+    <label class="item-input-wrapper">
+      <i class="icon ion-{{platformID}}-search placeholder-icon"></i>
+      <input type="search" placeholder="Search" ng-change="groups = searchGroups(groupList)" ng-model="search.res">
+    </label>
+  </div>
+  <ion-content class="has-tabs-top platform" scroll="false">
+    <div ng-hide="groups.length > 0" class="empty-list">
+      <center><i class="icon ion-{{platformID}}-people"></i></center>
+      <center>No available groups</center>
+    </div>
+    <ion-scroll class="groups-container">
+      <div class="list">
+        <a class="item item-avatar item-activity" ng-repeat="group in groups">
+          <img src="img/icon-logos/icon-profile-pic.png" ng-click="openGroup(group)">
+          <h2 ng-click="openGroup(group)">{{group.name}}</h2>
+          <p ng-click="openGroup(group)">{{group.caption}}</p>
+          <p ng-click="openGroup(group)">{{group.size}} member(s)</p>
+          <div ng-click="deleteGroup(group)">
+            <label class="item-icon-right" style="padding-right: 0px;">
+            <i class="icon ng-class:{true: 'ion-android-delete', false: 'ion-ios-trash-outline'}[androidPlatform]"></i>
+          </label>
+          </div>
+        </a>
+      </div>
+    </ion-scroll>
+  </ion-content>
+</div>

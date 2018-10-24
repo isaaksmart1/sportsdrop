@@ -1,0 +1,28 @@
+<div ng-controller="OptCtrl">
+  <ion-header-bar class="bar bar-header bar-theme" ui-sref="menu.settings">
+    <div class="buttons buttons-left header-item">
+      <span class="left-buttons">
+      <button class="button button-icon button-clear ion-{{platformID}}-arrow-back"></button> 
+      </span>
+    </div>
+    <h1 class="title">Account</h1>
+  </ion-header-bar>
+  <ion-content>
+    <div class="list">
+      <label class="item item-icon-left item-input item-stacked-label settings">
+            <span class="input-label">Email</span>
+            <p type="text">{{account.email}}</p>
+          </label>
+      <label class="item item-icon-left item-input item-stacked-label settings">
+            <span class="input-label">Display Name</span>
+            <p type="text">{{account.name}}</p>
+          </label>
+      <a class="item item-icon-left settings" ng-click="customize()">
+        <i class="icon ng-class:{true: 'ion-android-options', false: 'ion-ios-settings'}[androidPlatform]"></i> Customize
+      </a>
+      <a class="item item-icon-left settings" ng-click="accountDel()">
+        <i class="icon ng-class:{true: 'ion-android-delete', false: 'ion-ios-trash-outline'}[androidPlatform]"></i> Delete Account
+      </a>
+    </div>
+  </ion-content>
+</div>

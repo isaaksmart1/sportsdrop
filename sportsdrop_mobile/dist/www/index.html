@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <meta http-equiv="Content-Security-Policy" content="connect-src * blob: https://*.gstatic.com https://*.googleapis.com">
+
+  <!-- css and ionic-material stylesheets -->
+  <link rel="stylesheet" href="lib/ionic/css/ionic.css">
+  <link rel="stylesheet" href="lib/ion-md-input/css/ion-md-input.css">
+  <link rel="stylesheet" href="lib/ionic-material/dist/ionic.material.min.css">
+  <link rel="stylesheet" href="lib/ng-tags-input/ng-tags-input.css" type="text/css">
+
+  <!-- custom css and colors stylesheets-->
+  <link rel="stylesheet" href="css/themes/default.css">
+  <link rel="stylesheet" href="css/styles.min.css">
+
+  <!-- ionic-angularjs js -->
+  <script src="lib/blob-util/dist/blob-util.js"></script>
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+  <script src="lib/angular-sanitize/angular-sanitize.min.js"></script>
+  <script src="lib/angular-socket-io/socket.js"></script>
+  <script src="lib/angular-socket-io/socket.io.js"></script>
+  <script src="lib/ng-tags-input/ng-tags-input.min.js"></script>
+  <!--<script src="http://151.236.216.169:80/sportsdrop/socket.io.js"></script>-->
+
+  <!-- ionic-material js-->
+  <script src="lib/ion-md-input/js/ion-md-input.js"></script>
+  <script src="lib/ionic-material/dist/ionic.material.min.js"></script>
+
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="lib/ngCordova/dist/ng-cordova.min.js"></script>
+  <script src="cordova.js"></script>
+
+  <!--facebook libraries-->
+  <script src="lib/facebook-connect/openfb.js"></script>
+
+  <!-- pouchdb libraries -->
+  <script src="lib/pouchdb/pouchdb-5.2.0.min.js"></script>
+
+  <!-- application bundle -->
+  <script src="js/app/app.js"></script>
+  <script src="js/templates.js"></script>
+
+</head>
+
+<body ng-app="sportsdrop" ng-controller="AppCtrl">
+  <div id="fb-root"></div>
+  <div id="gmapLib" ng-hide="true"></div>
+  <ion-nav-view></ion-nav-view>
+</body>
+
+</html>

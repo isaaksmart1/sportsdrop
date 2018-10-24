@@ -1,0 +1,41 @@
+
+/*
+* == CUSTOM COLOR SCHEME ==
+* @ params:
+*       color of header
+*       color of title text
+*       color of menu tabs
+*       color of menu icons (in tabs)
+*       color of footer tabs
+*       color of fcn-icons (in footer)
+*       color of buttons
+*/
+
+:root {
+  --theme-default-white: #fff;
+  --theme-default-black: #282828;
+  
+  --theme-login-bg: #128dd4;
+  --theme-home-bar: #d32f2f;
+
+  --theme-color-bg: #d32f2f;
+  --theme-color-buttons: #d32f2f;
+  --theme-color-tabs: #d32f2f;
+
+  --theme-color-title: #fff;
+  --theme-color-menu-icons: #fff;
+  --theme-color-footer: #fff;
+
+  --theme-color-fcn-icons: #d32f2f;
+  --theme-color-marker-pulse: #31e894;
+
+  --theme-chat-bubble: #f0f4f7;
+  --theme-chat-bubble-text: #8495a3;
+  --theme-chat-bubble-from: #aab8c2;
+  --theme-chat-typist: #31e894;
+
+  --theme-outline-color: rgba(0, 0, 0, .12);
+  --theme-outline-subtle: #eee;
+
+  --theme-lv-text: #1d2129;
+}

@@ -1,0 +1,28 @@
+[{
+  "tag_game_type": "Football",
+  "tag_game_avatar": "img/avatars/Football.png"
+}, {
+  "tag_game_type": "Basketball",
+  "tag_game_avatar": "img/avatars/Basketball.png"
+}, {
+  "tag_game_type": "Tennis",
+  "tag_game_avatar": "img/avatars/Tennis.png"
+}, {
+  "tag_game_type": "Cricket",
+  "tag_game_avatar": "img/avatars/Cricket.png"
+}, {
+  "tag_game_type": "Badminton",
+  "tag_game_avatar": "img/avatars/Badminton.png"
+}, {
+  "tag_game_type": "Running",
+  "tag_game_avatar": "img/avatars/Running.png"
+}, {
+  "tag_game_type": "Swimming",
+  "tag_game_avatar": "img/avatars/Swimming.png"
+}, {
+  "tag_game_type": "Cycling",
+  "tag_game_avatar": "img/avatars/Cycling.png"
+}, {
+  "tag_game_type": "Rugby",
+  "tag_game_avatar": "img/avatars/Rugby.png"
+}]

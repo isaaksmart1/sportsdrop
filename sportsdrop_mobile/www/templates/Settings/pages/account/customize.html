@@ -1,0 +1,86 @@
+<ion-modal-view>
+  <ion-header-bar class="bar bar-header bar-theme" ng-click="closeModal()">
+    <div class="buttons buttons-left header-item">
+      <span class="left-buttons">
+      <button class="button button-icon button-clear ion-{{platformID}}-arrow-back"></button> 
+      </span>
+    </div>
+    <h1 class="title">Customize</h1>
+  </ion-header-bar>
+  <ion-content>
+    <div class="item item-icon-left settings">
+      <i class="icon ion-navicon-round"></i> My Activity
+    </div>
+    <label class="item item-stacked-label" ng-click="">
+      <span class="input-label">Search Favorites</span>
+      <input type="text" placeholder="Prioritize what to find"></input>
+    </label>
+    <label class="item item-stacked-label">
+      <span class="input-label">Search Radius : {{radius.value}} km</span>
+      <div class="range">
+        <i class="icon ion-ios-search"></i>
+        <input type="range" name="volume" min="5" max="20" step="5" value="{{radius.value}}" ng-model="radius.value">
+        <i class="icon ion-{{platformID}}-search"></i>
+      </div>
+    </label>
+    <div class="item item-icon-left settings">
+      <i class="icon ion-paintbucket"></i> Theme
+    </div>
+    <div class="list">
+      <label class="item item-radio">
+          <input type="radio" name="group" value="def" ng-click="theme()">
+          <div class="radio-content">
+            <div class="item-content">
+              Default
+            </div>
+            <i class="radio-icon ion-checkmark"></i>
+          </div>
+        </label>
+      <label class="item item-radio">
+          <input type="radio" name="group" value="abyss" ng-click="theme('abyss')">
+          <div class="radio-content">
+            <div class="item-content">
+              Abyss
+            </div>
+            <i class="radio-icon ion-checkmark"></i>
+          </div>
+        </label>
+      <label class="item item-radio">
+          <input type="radio" name="group" value="bloss" ng-click="theme('blossom')">
+          <div class="radio-content">
+            <div class="item-content">
+              Blossom
+            </div>
+            <i class="radio-icon ion-checkmark"></i>
+          </div>
+        </label>
+      <label class="item item-radio">
+          <input type="radio" name="group" value="dune" ng-click="theme('dune')">
+          <div class="radio-content">
+            <div class="item-content">
+              Dune
+            </div>
+            <i class="radio-icon ion-checkmark"></i>
+          </div>
+        </label>
+      <label class="item item-radio">
+          <input type="radio" name="group" value="ember" ng-click="theme('ember')">
+          <div class="radio-content">
+            <div class="item-content">
+              Ember
+            </div>
+            <i class="radio-icon ion-checkmark"></i>
+          </div>
+        </label>
+      <label class="item item-radio">
+          <input type="radio" name="group" value="winter" ng-click="theme('winter')">
+          <div class="radio-content">
+            <div class="item-content">
+              Winter
+            </div>
+            <i class="radio-icon ion-checkmark"></i>
+          </div>
+        </label>
+    </div>
+  </ion-content>
+</ion-modal-view>

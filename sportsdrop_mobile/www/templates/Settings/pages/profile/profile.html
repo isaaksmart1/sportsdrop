@@ -1,0 +1,49 @@
+<div ng-controller="OptCtrl" ng-init="profile()">
+  <ion-header-bar class="bar bar-header bar-theme" ui-sref="menu.settings">
+    <div class="buttons buttons-left header-item">
+      <span class="left-buttons">
+      <button class="button button-icon button-clear ion-{{platformID}}-arrow-back"></button> 
+      </span>
+    </div>
+    <h1 class="title">Profile</h1>
+  </ion-header-bar>
+  <ion-content>
+    <div class="list card">
+      <div class="item">
+        <div class="row">
+          <div class="profile">
+            <img id="profile-pic" src="{{account.picture}}" ng-click="imageGallery()" style="box-shadow:none">
+          </div>
+        </div>
+      </div>
+      <div class="profile-content item item-body" style="padding:0">
+        <div class="sub-menu">
+          <button>{{account.name}}
+            <br>{{account.email}}
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="list">
+      <!--<a ng-show="fbAccount" class="item item-icon-left settings" ui-sref="profile">
+        <i class="icon ion-{{platformID}}-person"></i> About
+        <p>{{account.fb.about}}</p>
+      </a>-->
+      <a class="item item-icon-left settings" ui-sref="profile">
+        <i class="icon ion-{{platformID}}-people"></i> Community
+        <p>{{account.community.length}}</p>
+      </a>
+      <a ng-show="fbAccount" class="item item-icon-left settings" ui-sref="profile">
+        <i class="icon ion-social-facebook"></i> Connected
+      </a>
+      <!--<a ng-show="fbAccount" class="item item-icon-left settings" ui-sref="profile">
+        <i class="icon ion-{{platformID}}-person"></i> Favourite Sport
+        <p>{{account.fb.likes}}</p>
+      </a>-->
+      <a ng-show="!fbAccount" class="item item-icon-left settings" ng-click="takePicture()">
+        <i class="icon ion-image"></i> New Profile Pic
+        <p></p>
+      </a>
+    </div>
+  </ion-content>
+</div>

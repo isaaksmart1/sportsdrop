@@ -1,0 +1,107 @@
+<div ng-init="downloadInfo()" ng-model="game">
+  <div class="sportsdrop bar bar-header">
+    <div class="buttons buttons-left header-item">
+      <span class="left-buttons">
+        <button class="button button-icon button-clear ion-{{platformID}}-arrow-back" ui-sref="menu.activities"></button> 
+      </span>
+    </div>
+    <h1 class="h1 title title-center color activity">{{game.game_host}}</h1>
+  </div>
+  <ion-content class="has-header activity-info">
+    <div class="card">
+      <section class="activity-container">
+        <div class="row header">
+          <img class="activity" ng-src="{{banner}}" alt="">
+          <div id="activity-tag">
+            <p>{{game.tag_date}}, {{game.tag_time}}
+            </p>
+          </div>
+        </div>
+        <div class="row list">
+          <div class="col">
+            <div id="activity-dividers date-time" class="item item-divider"></div>
+            <div ng-hide="host || (game.tag_invite == '')">
+              <div class="row">
+                <div class="col col-65">
+                  <button class="button button-activity" ng-style="gameStyle(game)">
+                  <span ng-switch on="game.tag_invite">
+                    <div ng-switch-when="request">Confirm Request</div>
+                    <div ng-switch-when="pending">Awaiting Response...</div>
+                    <div ng-switch-when="accepted">Invited</div>
+                    <div ng-switch-when="rejected">Rejected</div>
+                  </span>
+                </button>
+                </div>
+                <div class="col option">
+                  <button ng-show="game.tag_invite == 'request'" class="button button-icon" ng-click="joinGames()">
+                    <i class="icon ion-happy-outline"></i> Join</button>
+                  <button ng-show="(game.tag_invite == 'pending') || (game.tag_invite == 'accepted')" class="button button-icon" ng-click="toggleLeave(game)">
+                    Leave</button>
+                </div>
+              </div>
+            </div>
+            <div id="activity-dividers" class="item item-divider">
+              Activity Details
+            </div>
+            <h3>{{game.game_activity}}</h3>
+            <h4>{{game.game_address}}</h4>
+            <div ng-show="game.game_comments" class="item item-text-wrap">
+              {{game.game_comments}}
+            </div>
+            <div id="activity-dividers" ng-show="host && joinList.length > 0" class="card requests">
+              Player Requests
+            </div>
+            <item ng-show="host" class="item item-avatar item-button-right" ng-repeat="player in joinList track by $index">
+              <img src="{{player.picture}}" ui-sref="profile({info: player})">
+              <span ui-sref="profile({info: player})">
+                <h2>{{player.name}}</h2>
+                <p>{{player.email}}</p>
+              </span>
+              <div class="buttons">
+                <button class="button button-icon" ng-click="accept($index)">
+                  <i class="icon ion-thumbsup balanced"></i>
+                </button>
+                <button class="button button-icon" ng-click="reject($index)">
+                  <i class="icon ion-thumbsdown assertive"></i>
+                </button>
+              </div>
+            </item>
+            <div id="activity-dividers" ng-show="host && acceptList.length > 0" class="card accepted">
+              Players Accepted
+            </div>
+            <div id="activity-dividers" ng-show="!host" class="item item-divider">
+              Players Attending ({{acceptList.length}})
+            </div>
+            <item ng-hide="!host && (game.tag_invite != 'accepted')" class="item item-avatar item-button-right" ng-repeat="player in acceptList track by $index">
+              <img src="{{player.picture}}" ui-sref="profile({info: player})">
+              <span ui-sref="profile({info: player})">
+                <h2>{{player.name === me ? 'Me': player.name}}</h2>
+                <p>{{player.email}}</p>
+              </span>
+              <div ng-show="host" class="button button-icon" ng-click="accToPend($index)">
+                <ion-spinner icon="ripple"></ion-spinner>
+              </div>
+            </item>
+            <div id="activity-dividers" ng-show="host && rejectList.length > 0" class="card rejected">
+              Players Rejected
+            </div>
+            <item ng-show="host" class="item item-avatar item-button-right" ng-repeat="player in rejectList track by $index">
+              <img src="{{player.picture}}" ui-sref="profile({info: player})">
+              <span ui-sref="profile({info: player})">
+                <h2>{{player.name}}</h2>
+                <p>{{player.email}}</p>
+              </span>
+              <div ng-show="host" class="button button-icon" ng-click="rejToPend($index)">
+                <ion-spinner icon="ripple"></ion-spinner>
+              </div>
+            </item>
+          </div>
+        </div>
+      </section>
+    </div>
+  </ion-content>
+  <ion-footer-bar ng-show="!host && (!game.game_status_deleted) && (game.tag_invite === '')" class="tabs tabs-icon-top sportsdrop bar-footer">
+    <a ng-click="joinSelect(game)" class="tab-item" data-ink-color="{{inkColor()}}">
+      <i class="icon ion-happy-outline"></i><b>Join</b></a>
+  </ion-footer-bar>
+</div>

@@ -1,0 +1,30 @@
+<div>
+  <div class="sportsdrop bar bar-header has-tabs-top">
+    <div class="buttons buttons-left header-item">
+      <span class="right-buttons"><button class="button button-icon button-clear ion-{{platformID}}-home"
+      ui-sref="home"> 
+            </button> 
+        </span>
+    </div>
+    <div class="h1 title title-center color"> Settings</div>
+  </div>
+  <ion-content class="has-tabs-top platform">
+    <div class="list">
+      <a class="item item-icon-left settings" ui-sref="profile">
+        <i class="icon ion-{{platformID}}-person"></i> Profile
+      </a>
+      <a class="item item-icon-left settings" ui-sref="account">
+        <i class="icon ng-class:{true: 'ion-android-unlock', false: 'ion-ios-unlocked-outline'}[androidPlatform]"></i> Account
+      </a>
+      <a class="item item-icon-left settings" ui-sref="notifications">
+        <i class="icon ng-class:{true: 'ion-android-notifications', false: 'ion-ios-bell-outline'}[androidPlatform]"></i> Notifications
+      </a>
+      <a class="item item-icon-left settings" ui-sref="about">
+        <i class="icon ng-class:{true: 'ion-information-circled', false: 'ion-ios-information'}[androidPlatform]"></i> About
+      </a>
+      <a class="item item-icon-left settings" ng-click="logout()">
+        <i class="icon ion-android-exit"></i> Logout
+      </a>
+    </div>
+  </ion-content>
+</div>

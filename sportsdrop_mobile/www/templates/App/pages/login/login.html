@@ -1,0 +1,34 @@
+<div>
+  <ion-content scroll="false">
+    <section class="login-container">
+      <div class="background cross-fade">
+        <img id="f7" src="img/login/bg-crt.jpg">
+        <img id="f6" src="img/login/bg-trck.jpg">
+        <img id="f5" src="img/login/bg-ten.jpg">
+        <img id="f4" src="img/login/bg-hoop.jpg">
+        <img id="f3" src="img/login/bg-ft.jpg">
+        <img id="f2" src="img/login/bg-str.jpg">
+      </div>
+      <div class="header text-center">
+        <img src="{{::logo}}" />
+      </div>
+      <div class="form">
+        <div class="list">
+          <div class="item item-input" style="padding-left: 0px">
+            <ion-md-input placeholder="Username" type="text" ng-model="user.name"></ion-md-input>
+          </div>
+          <div class="item item-input" style="padding-left: 0px">
+            <ion-md-input placeholder="Password" type="password" ng-model="user.password"></ion-md-input>
+          </div>
+        </div>
+        <div class="login-buttons">
+          <button class="button button-block button-login" ng-click="login()">Log In</button>
+        </div>
+        <div class="row">
+          <button class="button button-clear" ui-sref="register">New user? Sign Up</button>
+          <button class="button button-clear" ui-sref="resetpass">Forgot password?</button>
+        </div>
+      </div>
+    </section>
+  </ion-content>
+</div>

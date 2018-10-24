@@ -1,0 +1,28 @@
+<div ng-controller="ActivityCtrl">
+  <div class="sportsdrop bar bar-header has-tabs-top">
+    <div class="h1 title title-center color">Map</div>
+    <div class="buttons buttons-right header-item">
+      <span class="right-buttons"><button ng-click="openActions()"
+      class="button button-icon button-clear ng-class:{true: 'ion-android-more-horizontal', false: 'ion-ios-more'}[androidPlatform]"> 
+            </button> 
+        </span>
+    </div>
+    <div class="buttons buttons-left header-item">
+      <span class="right-buttons"><button class="button button-icon button-clear ion-{{platformID}}-home"
+      ui-sref="home"> 
+            </button> 
+        </span>
+    </div>
+  </div>
+  <ion-content class="has-tabs-top" scroll="false">
+    <map on-create="mapCreated(map)"></map>
+  </ion-content>
+  <ion-footer-bar class="tabs tabs-icon-top sportsdrop bar-footer">
+    <a ng-click="searchGame()" class="tab-item" data-ink-color="{{inkColor()}}" data-ink-opacity=".35">
+      <i class="icon ion-{{platformID}}-search"></i><b>Search</b></a>
+    <a ng-click="centerOnUser()" class="tab-item" data-ink-color="{{inkColor()}}" data-ink-opacity=".35">
+      <i class="icon ng-class:{true: 'ion-location', false: 'ion-ios-location'}[androidPlatform]"></i><b>My Location</b></a>
+    <a ng-click="createOrEditGame()" class="tab-item" data-ink-color="{{inkColor()}}" data-ink-opacity=".35">
+      <i class="icon ng-class:{true: 'ion-android-checkbox-outline', false: 'ion-ios-compose-outline'}[androidPlatform]"></i><b>New Game</b></a>
+  </ion-footer-bar>
+</div>

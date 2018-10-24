@@ -1,0 +1,29 @@
+<ion-modal-view>
+  <ion-header-bar class="bar bar-header bar-theme" ng-click="closeModal()">
+    <div class="buttons buttons-left header-item">
+      <span class="left-buttons">
+      <button class="button button-icon button-clear ion-{{platformID}}-arrow-back"></button> 
+      </span>
+    </div>
+    <h1 class="title">Delete Account</h1>
+  </ion-header-bar>
+  <ion-content>
+    <div class="list">
+      <div class="card">
+        <div id="accountdel" class="account-deletion">
+          <h5>IF YOU DELETE YOUR ACCOUNT YOU WILL:</h5>
+          <ul>
+            <li>Delete your account from SportsDrop</li>
+            <li>Not be able to recover your account</li>
+            <li>Delete your SportsDrop groups and activities</li>
+            <li>Need to create a new account to continue use</li>
+            <p></p>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="account-deletion button button-bar" ng-click="confirmAccountDeletion()">DELETE MY ACCOUNT</div>
+      </div>
+    </div>
+  </ion-content>
+</ion-modal-view>

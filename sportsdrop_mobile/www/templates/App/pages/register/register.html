@@ -1,0 +1,48 @@
+<div>
+  <ion-content scroll="false">
+    <section class="register-container">
+      <div class="form">
+        <div class="list" style="margin-bottom: 5px">
+          <div class="item item-input-inset">
+            <label class="item-input-wrapper">
+              <input placeholder="Email" type="email" ng-model="user.email" required>
+            </label>
+          </div>
+          <div class="item item-input-inset">
+            <label class="item-input-wrapper">
+              <input placeholder="Username" type="text" ng-model="user.name" required>
+            </label>
+          </div>
+          <div class="item item-input-inset">
+            <label class="item-input-wrapper">
+              <input placeholder="Password" type="password" ng-model="user.password" required>
+            </label>
+          </div>
+          <div class="item item-input-inset">
+            <label class="item-input-wrapper">
+              <input placeholder="Confirm Password" type="password" ng-model="user.confirmpass" required>
+            </label>
+          </div>
+          <!-- <label class="item item-input item-select">
+            <div class="input-label">Choose Language</div>
+            <select>
+              <option>Deutsch</option>
+              <option selected>English</option>
+              <option>Español</option>
+              <option>Français</option>
+              <option>Português</option>
+              <option>普通话</option>
+              </select>
+          </label> -->
+        </div>
+        <div class="register-buttons">
+          <button class="button button-block button-register" ng-click="signup()">Register</button>
+          <button class="button button-block button-cancel" ui-sref="login">Back to Log In</button>
+          <div class="terms">Creating an account means you agree to our
+            <a href="#" ng-click="openPolicy()">Terms and Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </ion-content>
+</div>

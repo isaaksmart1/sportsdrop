@@ -1,0 +1,7 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    // Beautify config
+
+    // Automatically beautify files on save. Set to true to run for JSON, javascript, html, css and sass. Use array to set indiviaul types to beautify: ["js", "json", "html", "css", "sass"]
+    // "beautify.onSave": true
+}

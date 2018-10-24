@@ -1,0 +1,18 @@
+<ion-popover-view ng-controller="OptCtrl" class="popover actions-list">
+  <ion-content scroll="false">
+    <div class="list">
+      <a ng-show="$state.includes('menu.groups')" class="item" style="font-size:inherit" ui-sref="new-group">
+        New Group
+      </a>
+      <a class="item" style="font-size:inherit" ui-sref="community">
+        Community
+      </a>
+      <a class="item" style="font-size:inherit" ui-sref="menu.settings">
+        Settings
+      </a>
+      <a class="item" style="font-size:inherit" ng-click="logout()">
+        Logout
+      </a>
+    </div>
+  </ion-content>
+</ion-popover-view>

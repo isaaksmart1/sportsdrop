@@ -6,6 +6,6 @@ sportsdrop_webservices/
 
 # Node Modules
 ##############
-sportsdrop_client/node_modules/
+sportsdrop_mobile/node_modules/
 sportsdrop_server/node_modules/
-sportsdrop_www/node_modules/
+sportsdrop_web/node_modules/

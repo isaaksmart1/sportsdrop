@@ -1,0 +1,43 @@
+<div ng-controller="GroupCtrl" ng-init="newGroup()">
+  <ion-header-bar class="bar bar-header bar-theme" ui-sref="menu.groups">
+    <div class="buttons buttons-left header-item">
+      <span class="left-buttons">
+      <button class="button button-icon button-clear ion-{{platformID}}-arrow-back"></button> 
+      </span>
+    </div>
+    <h1 class="title">New Group</a>
+    </h1>
+  </ion-header-bar>
+  <button class="button button-fab button-fab-top-left button-theme icon ion-{{platformID}}-arrow-forward" style="top: 65px; left: 80%;"
+    ng-click="goConfirm()"></button>
+  <div class="has-header item-input-inset search-bar" style="z-index:0;">
+    <label class="item-input-wrapper">
+      <i class="icon ion-{{platformID}}-search placeholder-icon"></i>
+      <input type="search" placeholder="Search people to add" ng-change="persons = searchGroups(communityList)" ng-model="search.res">
+    </label>
+  </div>
+  <ion-content class="has-tabs-top platform" scroll="false">
+    <ion-scroll ng-show="memberList.length > 0" direction="x" class="members-container">
+      <div class="row">
+        <div class="box text-center" ng-repeat="member in memberList" ng-click="removeMember(member)">
+          <div class="item item-avatar">
+            <img src="{{member.picture}}">
+          </div>
+        </div>
+      </div>
+    </ion-scroll>
+    <ion-scroll class="community-container">
+      <div class="list">
+        <div ng-repeat="person in persons" ng-click="addMember(person)">
+          <div class="item item-avatar item-button-right">
+            <img src="{{person.picture}}">
+            <span>
+              <h2>{{person.name}}</h2>
+              <p>{{person.email}}</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </ion-scroll>
+  </ion-content>
+</div>
