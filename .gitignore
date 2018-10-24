@@ -2,10 +2,10 @@
 ################
 builds/
 resources/
-sportsdrop_services/
+sportsdrop_webservices/
 
-# Node modules
+# Node Modules
 ##############
 sportsdrop_client/node_modules/
-sportsdrop_server/node_modules/
+sportsdrop_webapp/node_modules/
 sportsdrop_www/node_modules/
