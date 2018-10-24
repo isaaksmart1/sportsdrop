@@ -1,6 +1,6 @@
 # Overview
 
-SportsDrop is a social community based application which allows users to organize and share sports-related events and activities
+SportsDrop is a social community based application which allows users to organize and share sports-related events and activities.
 
 # Mobile App
 
