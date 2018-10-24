@@ -1,4 +1,5 @@
 # Overview
+![alt text](logo.png "SportsDrop")
 
 SportsDrop is a social community based application which allows users to organize and share sports-related events and activities.
 
@@ -13,7 +14,7 @@ SportsDrop is a social community based application which allows users to organiz
 
 # Mobile App
 
-/folder/location/sportsdrop_client
+/folder/location/sportsdrop_mobile
 
 ## Features
 
@@ -26,7 +27,7 @@ SportsDrop is a social community based application which allows users to organiz
 
 ## Usage
 
-Navigate to root folder directory '/' and install node_modules:
+Navigate to root folder directory 'sportsdrop_mobile/' and install node_modules:
 
 `npm install --save`
 
@@ -55,7 +56,7 @@ This solution assumes you have CouchDB Database installed and configured to the 
 
 ## Usage
 
-Navigate to root folder directory '/' and install node_modules:
+Navigate to root folder directory 'sportsdrop_server/' and install node_modules:
 
 `npm install --save`
 
@@ -65,7 +66,7 @@ Run web server using node:
 
 # Website
 
-/folder/location/sportsdrop_www
+/folder/location/sportsdrop_web
 
 This contains a starter template for the website; serves as a landing page to promote the mobile application. There is a test site and a live production site contained within the directory tree, which can be interchanged by setting a LiveSite variable inside *server.js*.
 
@@ -78,7 +79,7 @@ This contains a starter template for the website; serves as a landing page to pr
 
 ## Usage
 
-Navigate to root folder directory '/' and install node_modules:
+Navigate to root folder directory 'sportsdrop_web/' and install node_modules:
 
 `npm install --save`
 
