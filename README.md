@@ -5,12 +5,22 @@ SportsDrop is a social community based application which allows users to organiz
 
 The stack is as follows:
 
-FRONT                          MIDDLE                           BACK
+FRONT                          
 
-Cordova 8.x                   NodeJS 7.x                    Apache CouchDB
-AngularJS 1.x.              Express (Latest)             (NoSQL Database Storage)
+Cordova 8.x                   
+AngularJS 1.x.              
 Ionic 1.x.                  
 HTML5 & CSS
+
+MIDDLE 
+
+NodeJS 7.x              
+Express (Latest)
+
+BACK
+
+Apache CouchDB
+(NoSQL Database Storage)            
 
 I do assume you have this project setup with the above systems. I have gracefully separated all logic away from the main
 business application, so you can easily use your own database model for storage if you wish (SQL, MongoDB).
