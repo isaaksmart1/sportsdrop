@@ -83,11 +83,11 @@ var server = {
     port: '8060'
   },
   prod: {
-    addr: 'www.sportsdrop.mobi',
+    addr: '<your-ip-address>',
     port: '80'
   },
   web: {
-    addr: 'www.sportsdrop.co.uk',
+    addr: '<your-ip-address>',
     port: '80'
   },
   connect: function (mode, prot) {
