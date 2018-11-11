@@ -1,12 +1,12 @@
-'strict'
+'strict';
 
 var https = require('https');
 
-const app_secret = 'bb285cb65be22ee89175e531029dff34';
-const app_id = '419650108398981';
+const app_secret = '<your-facebook-app-secret>';
+const app_id = '<your-facebook-app-id>';
 const metadata =
     'key=value' +
-    '&amp' +
+    // '&amp' +
     // 'client_id=' + app_id +
     // '&client_secret=' + app_secret +
     ';access_token=' + app_id + '|' + app_secret +
@@ -23,10 +23,10 @@ function graphAPI(method, path, options) {
     this.host = 'graph.facebook.com';
     this.port = process.env.PORT || 443;
     this.path = '/' + path + '?' + query + metadata;
-};
+}
 
 // parse url request string
-function parseQuery(obj) {};
+function parseQuery(obj) {}
 
 // create url request string
 function encodeQuery(obj) {
@@ -35,20 +35,20 @@ function encodeQuery(obj) {
         if (obj.hasOwnProperty(i)) {
             query.push(i + '=' + obj[i]);
         }
-    };
+    }
     query = query.join('&');
     if (query) query += '&';
     return query;
-};
+}
 
 // run HTTPS request
-function async(request, cb) {
+function async (request, cb) {
     var req = https.request(request, cb);
     req.on('error', function (err) {
         // handle errors
     });
     req.end();
-};
+}
 
 module.exports = {
     verifyToken: function (token, callback) {
@@ -56,8 +56,8 @@ module.exports = {
             input_token: token,
             access_token: token
         });
-        async(req, callback);
+        async (req, callback);
     },
     async: async,
     graphAPI: graphAPI
-}
+};

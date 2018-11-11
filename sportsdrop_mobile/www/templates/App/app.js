@@ -23,12 +23,11 @@ angular.module('sportsdrop', [
     AuthService, AuthEvents, CustomUI, ionicMaterialInk) {
 
     // react to authorization issues
-    // $scope.$on(AuthEvents.notAuthorized, function (event) {
-    //   $state.go('login');
-    //   CustomUI.alert('Not Authorized');
-    //   AuthService.logout(LocalHTTP.userName()).then(function () {
-    //   });
-    // });
+    $scope.$on(AuthEvents.notAuthorized, function (event) {
+      $state.go('login');
+      CustomUI.alert('Not Authorized');
+      AuthService.logout(LocalHTTP.userName()).then(function () {});
+    });
 
     // react to authentication issues
     $scope.$on(AuthEvents.notAuthenticated, function (event) {
@@ -164,7 +163,7 @@ angular.module('sportsdrop', [
     };
     isCordova(function () {
       StateHandler.$on();
-      App.initMap('AIzaSyB16sGmIekuGIvYOfNoW9T44377IU2d2Es');
+      App.initMap('<your-map-key>');
       if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
         cordova.plugins.Keyboard.hideKeyboardAccessoryBar(false);
         cordova.plugins.Keyboard.disableScroll(true);
@@ -180,7 +179,7 @@ angular.module('sportsdrop', [
         serviceUrl = 'file:///android_asset/www/';
       }
       Facebook.init({
-        appId: '419650108398981'
+        appId: '<app-facebook-app-id>'
       });
     });
   });
