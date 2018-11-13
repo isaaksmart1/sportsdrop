@@ -1,7 +1,7 @@
 # Overview
 ![alt text](logo.png "SportsDrop")
 
-SportsDrop is a social community based application which allows users to organize and share sports-related events and activities. This is an Angular 1.x and Ionic 1.x Project which can be easily updated to the most recent versions of said frameworks. The intention is to create a starting template for full-stack web/mobile development for people of the community for new-starters and seasoned veterans alike.
+SportsDrop is a social community based application which allows users to organize and share sports-related events and activities. This project is written using Angular 1.x and Ionic 1.x which can be easily updated to the most recent versions of said frameworks. The intention is to create a starting template for full-stack web/mobile development for people of the community for new-starters and seasoned veterans alike.
 
 The stack is as follows:
 
