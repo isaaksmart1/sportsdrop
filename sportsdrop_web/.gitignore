@@ -1,3 +1,9 @@
-# Folders
-#########
-node_modules/
+# All Folders
+#############
+*
+
+# Exceptions
+############
+!www/
+!config/
+!app/ssl/
