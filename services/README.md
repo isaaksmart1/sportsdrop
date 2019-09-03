@@ -1,26 +1,27 @@
 # Overview
-![alt text](logo.png "SportsDrop")
+
+![alt text](OFFICIAL_LOGO.png "SportsDrop")
 
 SportsDrop is a social community based application which allows users to organize and share sports-related events and activities. This project is written using Angular 1.x and Ionic 1.x which can be easily updated to the most recent versions of said frameworks. The intention is to create a starting template for full-stack web/mobile development for people of the community for new-starters and seasoned veterans alike.
 
 The stack is as follows:
 
-FRONT                          
+FRONT
 
-Cordova 8.x                   
-AngularJS 1.x.              
-Ionic 1.x.                  
+Cordova 8.x
+AngularJS 1.x.
+Ionic 1.x.
 HTML5 & CSS
 
-MIDDLE 
+MIDDLE
 
-NodeJS 7.x              
+NodeJS 7.x
 Express (Latest)
 
 BACK
 
 Apache CouchDB
-(NoSQL Database Storage)            
+(NoSQL Database Storage)
 
 I do assume you have this project setup with the above systems. I have gracefully separated all logic away from the main
 business application, so you can easily use your own database model for storage if you wish (SQL, MongoDB).
@@ -34,7 +35,7 @@ business application, so you can easily use your own database model for storage 
 * +-- jshint@2.9.6
 * -- npm@5.6.0
 
-# Mobile App
+## Mobile App
 
 /folder/location/sportsdrop_mobile
 
@@ -61,11 +62,11 @@ OR
 
 `ionic serve`
 
-# Web Server
+## Web Server
 
 /folder/location/sportsdrop_server
 
-This solution assumes you have CouchDB Database installed and configured to the desired ports (default: 5984) and NodeJS-Express. 
+This solution assumes you have CouchDB Database installed and configured to the desired ports (default: 5984) and NodeJS-Express.
 
 *Note: If you wish to run multiple instances of this script (i.e. multiple servers), you can setup a load balancing proxy to cycle requests. I recommend using HAProxy.*
 
@@ -86,7 +87,7 @@ Run web server using node:
 
 `node server.js`
 
-# Website
+## Website
 
 /folder/location/sportsdrop_web
 

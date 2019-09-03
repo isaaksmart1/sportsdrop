@@ -6,7 +6,6 @@ services/apis/
 
 # Node Modules
 ##############
-services/apis/node_modules/
 services/mobile/node_modules/
 services/server/node_modules/
 services/browser/node_modules/

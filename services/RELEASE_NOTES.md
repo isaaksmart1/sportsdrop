@@ -1,42 +1,44 @@
+# Top
+
 ## Mobile App - Release Notes
 
-## Version 3.0.5
+### Version 3.0.5
 
 [IsaakSmartSportsDrop](http://www.sportsdrop.co.uk/) released this on 9th Feb 2018 - __1 commit__ to master since this release
 
 * --update-- Release Notes and .gitignore file
 
-## Version 3.0.4
+### Version 3.0.4
 
 [IsaakSmartSportsDrop](http://www.sportsdrop.co.uk/) released this on 9th Feb 2018 - __1 commit__ to master since this release
 
 * --update-- Added location usage description to config
 
-## Version 3.0.3
+### Version 3.0.3
 
 [IsaakSmartSportsDrop](http://www.sportsdrop.co.uk/) released this on 1st Feb 2018 - __0 commit__ to master since this release
 
-## Version 3.0.2
+### Version 3.0.2
 
 [IsaakSmartSportsDrop](http://www.sportsdrop.co.uk/) released this on 1st Feb 2018 - __1 commit__ to master since this release
 
 * --update-- Removed facebook login feature.
 
-## Version 3.0.1
+### Version 3.0.1
 
 [IsaakSmartSportsDrop](http://www.sportsdrop.co.uk/) released this on 25th Jan 2018 - __2 commits__ to master since this release
 
 * --bug-fix-- Selection drop-down list for games hides automatically when clicked.
 * --bug-fix-- jsLint errors.
 
-## Version 3.0.0
+### Version 3.0.0
 
 [IsaakSmartSportsDrop](http://www.sportsdrop.co.uk/) released this on 15th Jan 2018 - __2 commits__ to master since this release
 
 * --Implemented - Grunt and gulp file tasks for production ready distribution.
 * --Implemented-- Users can now send forgotten password requests.
 
-## Version 2.0.0
+### Version 2.0.0
 
 [IsaakSmartSportsDrop](http://www.sportsdrop.co.uk/) released this on 5th Jun 2017 - __3 commits__ to master since this release
 
@@ -44,7 +46,7 @@
 * --Implemented-- Moved android/ios versions over to master branch.
 * --Implemented-- Applied commited changes from android-beta branch: SHA - 7dcaf694f2d55c9901382b5051b01603fcc83e60
 
-## Version 1.5.0
+### Version 1.5.0
 
 [IsaakSmartSportsDrop](http://www.sportsdrop.co.uk/) released this on 1st Jun 2017 - __11 commits__ to master since this release
 
@@ -60,13 +62,13 @@
 * --Implemented-- Applied commited changes from android-beta branch: SHA - 19883ed7a7f475ad51f5646ccbcd6c358e25067c
 * --Implemented-- Added keyboardaccessory bar. Altered update changes icon. Allow map to zoom out to full size. Remove close X from infowindow. Changed hide spinner timeout tp 50ms. --todo-- Apply updates to ios-version branch.
 
-## Version 1.1.5
+### Version 1.1.5
 
 [IsaakSmartSportsDrop](http://www.sportsdrop.co.uk/) released this on 14th Jan 2017 - __1 commit__ to master since this release
 
 * --Implemented-- Applied commited changes from android-beta branch: SHA - 3b3a93afa2f8298af7b162948b23938621c33883
 
-## Version 1.1.0
+### Version 1.1.0
 
 [IsaakSmartSportsDrop](http://www.sportsdrop.co.uk/) released this on 8th Jan 2017 - __9 commits__ to master since this release
 
@@ -80,14 +82,14 @@
 * --Implemented-- Code refactored into folders for ios-version branch. --todo-- delete temp branch.
 * --Implemented-- Total code refaction --todo-- Refactor code for ios-version branch.
 
-## Version 1.0.0
+### Version 1.0.0
 
 [IsaakSmartSportsDrop](http://www.sportsdrop.co.uk/) released this on 14th Dec 2016 - __2 commits__ to master since this release
 
 * --Implemented-- Copied http changes over from android to ios-version. --todo-- migrate over to Mac for final build, simulation and upload for beta testing.
 * --Implemented-- Copied changes ios-version-branch. switched http back-end call to https --todo-- copy http change to ios-version.
 
-## Version 0.0.1
+### Version 0.0.1
 
 [IsaakSmartSportsDrop](http://www.sportsdrop.co.uk/) released this on 12th Dec 2016 - __21 commits__ to master since this release
 
@@ -115,40 +117,40 @@
 
 ## Web Server - Release Notes
 
-## Version 3.0.1
+### Version-3.0.1
 
 [IsaakSmartSportsDrop](http://www.sportsdrop.co.uk/) released this on 24th Oct 2018 - __1 commit__ to master since this release
 
 * Fixed ESLint and JSHint issues
 
-## Version 3.0.0
+### Version-3.0.0
 
 [IsaakSmartSportsDrop](http://www.sportsdrop.co.uk/) released this on 19th May 2018 - __1 commit__ to master since this release
 
 * Updated db config and email server
 
-## Version 2.5.0
+### Version-2.5.0
 
 [IsaakSmartSportsDrop](http://www.sportsdrop.co.uk/) released this on 7th Jan 2018 - __2 commit__ to master since this release
 
 * --Implemented - Redis web server database and sending email client.
 * --Implemented - User can now request forgotten login password.
 
-## Version 2.4.0
+### Version-2.4.0
 
 [IsaakSmartSportsDrop](http://www.sportsdrop.co.uk/) released this on 22nd Apr 2017 - __2 commit__ to master since this release
 
 * --Implemented-- Created data validation and request authorization file. Added status codes. Expanded CouchDB databases and indexes. Optimized JWT api. --todo-- Add facebook API.
 * --Implemented-- Facebook API and email verification service. Updated nodejs version 4.0 => 6.0 and related packages. --todo-- expand and fix mail verification service to test for address existence for valid domains.
 
-## Version 2.3.0
+### Version-2.3.0
 
 [IsaakSmartSportsDrop](http://www.sportsdrop.co.uk/) released this on 6th Jan 2017 - __2 commit__ to master since this release
 
 * -- Implemented -- server.js: Fixed authentication issue. Optimized database search method. Commented out console.logs()
 * --Implemented-- Altered indexing method. Replaced 'All Sports' flag with empty string field.
 
-## Version 2.2.0
+### Version-2.2.0
 
 [IsaakSmartSportsDrop](http://www.sportsdrop.co.uk/) released this on 8th Dec 2016 - __3 commit__ to master since this release
 
@@ -156,28 +158,28 @@
 * --Implemented-- Server listens on localhost (default). --todo-- Merge development branch changes and then delete development branch.
 * --Implemented-- MERGED development inside master --todo-- delete development branch
 
-## Version 2.1.1
+### Version-2.1.1
 
 [IsaakSmartSportsDrop](http://www.sportsdrop.co.uk/) released this on 19th Nov 2016 - __1 commit__ to master since this release
 
 * --Implemented-- cloud server virtual machine IP address now referenced. re-added pouchdb library.
 
-## Version 2.1.0
+### Version-2.1.0
 
 [IsaakSmartSportsDrop](http://www.sportsdrop.co.uk/) released this on 12th Oct 2016 - __3 commit__ to master since this release
 
 * --Implemented--Swapped from bcrypt to crypto package and added encryption module. cleaned server.js.
-* --Implemented-- configure server to listen on local IP address (i.e local roaming enabled). Added token authorization and authenticaion standard - JWT. All routes now verify user token using passport middleware. Added 'rejection' field to object data. Moved JWT secret to separate config file. Updated package.json dependencies. --Bug fix-- Modified incoming query object date fields to compensate for daylight saving and JSON stringify processes. Added console log errors for failed requests. --todo-- deploy to Microsoft Azure: https://azure.microsoft.com/en-us/documentation/articles/web-sites-deploy/
-* --Implemented-- reconfigured node module dependencies. --todo-- deploy to Microsoft Azure: https://azure.microsoft.com/en-us/documentation/articles/web-sites-deploy/
+* --Implemented-- configure server to listen on local IP address (i.e local roaming enabled). Added token authorization and authenticaion standard - JWT. All routes now verify user token using passport middleware. Added 'rejection' field to object data. Moved JWT secret to separate config file. Updated package.json dependencies. --Bug fix-- Modified incoming query object date fields to compensate for daylight saving and JSON stringify processes. Added console log errors for failed requests. --todo-- deploy to Microsoft Azure: <https://azure.microsoft.com/en-us/documentation/articles/web-sites-deploy/>
+* --Implemented-- reconfigured node module dependencies. --todo-- deploy to Microsoft Azure: <https://azure.microsoft.com/en-us/documentation/articles/web-sites-deploy/>
 
-## Version 2.0.0
+### Version-2.0.0
 
 [IsaakSmartSportsDrop](http://www.sportsdrop.co.uk/) released this on 15th Sep 2016 - __2 commit__ to master since this release
 
 * --Implemented--database.js: changed index to emit address and _id keys. server.js: findgame() now optimized to return relevant info based on user role. joingames(), leavegames() and updaterequests(). --todo-- add timed session tokens to authorize user. devdactic.com/user-auth-angularjs-ionic/
 * --Implemented--Added extra map/view index to search for games by _id (useful for making join requests). Added cost/comment field to filtered request. Extended findgame_http request to filter games via type. Extended savegame_http request to update remote database on subsequent edits of game (No More Conflicts'). Extended updateReq _http to include rejected field.Moved validate function to _global scope. --todo-- add timed session tokens to authorize user. devdactic.com/user-auth-angularjs-ionic/
 
-## Version 1.5.0
+### Version-1.5.0
 
 [IsaakSmartSportsDrop](http://www.sportsdrop.co.uk/) released this on 5th Aug 2016 - __3 commit__ to master since this release
 
@@ -185,7 +187,7 @@
 * method: remotely retreive all games from database and then query (slow)
 * Sportsdrop Node.js Server Side Application. This will service all of the games posted and searched through node js server and the NoSQL CouchDB database. --Implemeted-- Login and Signup service
 
-## Version 1.0.0
+### Version-1.0.0
 
 [IsaakSmartSportsDrop](http://www.sportsdrop.co.uk/) released this on 7th Dec 2015 - __6 commit__ to master since this release
 
