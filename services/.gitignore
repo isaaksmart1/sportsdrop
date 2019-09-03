@@ -1,0 +1,12 @@
+# Source Folders
+################
+../builds/
+../resources/
+apis/
+
+# Node Modules
+##############
+apis/node_modules/
+mobile/node_modules/
+server/node_modules/
+browser/node_modules/

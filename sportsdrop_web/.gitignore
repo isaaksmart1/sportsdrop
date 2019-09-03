@@ -1,9 +1,0 @@
-# All Folders
-#############
-*
-
-# Exceptions
-############
-!www/
-!config/
-!app/ssl/
